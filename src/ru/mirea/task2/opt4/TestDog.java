@@ -1,4 +1,4 @@
-package ru.mirea.lab1;
+package ru.mirea.task2.opt4;
 import java.lang.*;
 public class TestDog {
     public static void main(String[] args){
