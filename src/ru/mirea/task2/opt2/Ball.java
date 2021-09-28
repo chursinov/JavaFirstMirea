@@ -1,4 +1,4 @@
-package ru.mirea.lab1;
+package ru.mirea.task2.opt2;
 import java.lang.*;
 public class Ball {
     private String color;
