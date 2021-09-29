@@ -1,4 +1,4 @@
-package l1;
+package ru.mirea.task5.opt1;
 
 public abstract class Dish {
     private String name;

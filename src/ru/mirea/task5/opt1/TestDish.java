@@ -1,4 +1,4 @@
-package l1;
+package ru.mirea.task5.opt1;
 import java.lang.*;
 public class TestDish{
     public static void main(String[] args){
