@@ -1,4 +1,4 @@
-package ru.mirea.task7;
+package ru.mirea.task7.opt1;
 
 public abstract class Shape {
     protected String color;

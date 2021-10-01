@@ -1,4 +1,9 @@
-package ru.mirea.task7;
+package ru.mirea.task7.opt1;
+
+import ru.mirea.task7.opt1.Circle;
+import ru.mirea.task7.opt1.Rectangle;
+import ru.mirea.task7.opt1.Square;
+import ru.mirea.task7.opt1.Shape;
 
 public class TestShape {
     public static void main(String[] args){
