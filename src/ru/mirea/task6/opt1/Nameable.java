@@ -1,8 +1,32 @@
 package ru.mirea.task6.opt1;
-
-public interface Nameable{
-    void GetName();
+import java.lang.*;
+public interface Nameable {
+    void getName();
 }
 class Planet implements Nameable{
-    private 
+    private String name;
+    Planet(String name){
+        this.name = name;
+    }
+    public void getName(){
+        System.out.println("Класс планеты, имя объекта: " + name);
+    }
+}
+class Car implements Nameable{
+    private String name;
+    Car(String name){
+        this.name = name;
+    }
+    public void getName(){
+        System.out.println("Класс планеты, имя объекта: " + name);
+    }
+}
+class Animal implements Nameable{
+    private String name;
+    Animal(String name){
+        this.name = name;
+    }
+    public void getName(){
+        System.out.println("Класс планеты, имя объекта: " + name);
+    }
 }
