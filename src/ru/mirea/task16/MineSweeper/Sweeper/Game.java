@@ -53,19 +53,22 @@ public class Game {
             case CLOSED:
                 switch (bomb.get(coord))
                 {
-                    case ZERO: openBoxesAround(coord); return;
-                    case BOMB: openBombs(coord);return;
-                    default: flag.setOpenedToBox(coord); return;
+                    case ZERO:
+                        openBoxesAround(coord);return;
+                    case BOMB:
+                        openBombs(coord);return;
+                    default:
+                        flag.setOpenedToBox(coord);return;
                 }
         }
     }
 
     private void setOpenedToClosedBoxesAroundNumber(Coord coord) {
-        if (bomb.get(coord) != Box.BOMB)
+        if (bomb.get(coord) != (Box.BOMB))
             if (flag.getCountOfFlagedBoxesAround(coord) == bomb.get(coord).getNumber())
                 for (Coord around : Ranges.getCoordsAround(coord))
-                    if (flag.get(around) == Box.CLOSED)
-                        openBox(coord);
+                    if (flag.get(coord) == Box.CLOSED)
+                        openBox(around);
     }
 
     private void openBombs(Coord bombed) {

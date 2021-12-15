@@ -5,12 +5,9 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import ru.mirea.task16.MineSweeper.Sweeper.*;
 import ru.mirea.task16.MineSweeper.Sweeper.Box;
-import ru.mirea.task16.MineSweeper.Sweeper.Coord;
-import ru.mirea.task16.MineSweeper.Sweeper.Game;
-import ru.mirea.task16.MineSweeper.Sweeper.Ranges;
 
-import static ru.mirea.task16.MineSweeper.Sweeper.Ranges.*;
 
 public class JavaSweeper extends JFrame {
     private JPanel panel;
@@ -26,6 +23,7 @@ public class JavaSweeper extends JFrame {
     private JavaSweeper(){
         game = new Game(COLS, ROWS, BOMBS);
         game.start();
+        new UDate();
         setImages();
         initLabel();
         initPanel();
