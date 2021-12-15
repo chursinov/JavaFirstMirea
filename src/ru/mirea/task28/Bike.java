@@ -1,5 +1,7 @@
 package ru.mirea.task28;
 
+import org.junit.Test;
+
 public class Bike {
     public Chair chair;
     public Wheel[] wheels;
